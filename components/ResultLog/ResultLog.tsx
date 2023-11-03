@@ -23,7 +23,7 @@ export const ResultLog = ({ verificationResult }: ResultLogProps) => {
       </div>
     )
   }
-
+  console.log({verificationResult})
   const logMap = verificationResult.results[0]?.log?.reduce((acc: Record<string, boolean>, log) => {
     acc[log.id] = log.valid;
     return acc;
